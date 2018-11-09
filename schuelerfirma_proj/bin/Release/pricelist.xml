@@ -1,0 +1,30 @@
+<Configuration>
+  <Produkte>
+   <Produkt Name="Bleistift" Preis="0,10" />
+   <Produkt Name="Radiergummi" Preis="0,25" />
+   <Produkt Name="Collegeblock" Preis="1,20" />
+   <Produkt Name="Pappmappen" Preis="0,60" />
+   <Produkt Name="DINA4_Heft" Preis="0,50" />
+   <Produkt Name="DINA5_Heft" Preis="0,25" />
+   <Produkt Name="DINA5_Original_Vokabelheft" Preis="1,50" />
+   <Produkt Name="Klebestift" Preis="1,00" />
+   <Produkt Name="Schere" Preis="1,50" />
+   <Produkt Name="Lineal/Geodreieck" Preis="0,50" />
+   <Produkt Name="Parabelschablone" Preis="1,00" />
+   <Produkt Name="Papiertaschenteucher" Preis="0,20" />
+   <Produkt Name="Tintenkiller" Preis="0,70" />
+   <Produkt Name="Patrone_gross" Preis="0,30" />
+   <Produkt Name="Patrone_klein" Preis="0,10" />
+   <Produkt Name="Pinsel" Preis="0,50" />
+   <Produkt Name="Zeichenblock_DINA3" Preis="1,00" />
+   <Produkt Name="Taschenrechner" Preis="18,00" />
+   <Produkt Name="Kaufair_Kaubonbons" Preis="0,05" />
+   <Produkt Name="Erdnussriegel" Preis="0,80" />
+   <Produkt Name="Fairetta_Schokoriegel" Preis="1,00" />
+   <Produkt Name="Fairetta_Schokotafel" Preis="1,00" />
+   <Produkt Name="Doblito_Keksrolle" Preis="1,30" />
+   <Produkt Name="Zootiere_Weingummis" Preis="0,30" />
+   <Produkt Name="Bertha_Armband" Preis="0,50" />
+   <Produkt Name="Bertha_Planer" Preis="3,00" />
+ </Produkte>
+</Configuration>

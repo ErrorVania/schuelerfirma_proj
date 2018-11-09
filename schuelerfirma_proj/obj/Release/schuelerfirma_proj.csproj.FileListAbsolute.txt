@@ -1,0 +1,10 @@
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\bin\Release\schuelerfirma_proj.exe.config
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\bin\Release\schuelerfirma_proj.exe
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\bin\Release\schuelerfirma_proj.pdb
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.Form1.resources
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.Properties.Resources.resources
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.csproj.GenerateResource.cache
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.exe
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.pdb
+C:\Users\Joshua\source\repos\schuelerfirma_proj\schuelerfirma_proj\obj\Release\schuelerfirma_proj.csprojAssemblyReference.cache
