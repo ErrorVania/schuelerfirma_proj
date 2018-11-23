@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
+using System.Threading;
 
 namespace schuelerfirma_proj
 {
@@ -30,7 +31,28 @@ namespace schuelerfirma_proj
             listView1.Columns.Add("Anzahl", 105);
             listView1.Columns.Add("Einnahmen", 105);
             comboBox1.MaxDropDownItems = data.products.Length;
+
+            textBoxeintrag.ReadOnly = true;
+            textBoxgesamt.ReadOnly = true;
+            anzahl.Maximum = 100;
+            Refr(textBoxeintrag,textBoxgesamt);
+
         }
+
+        private void Refr(TextBox textBoxeintrag, TextBox textBoxgesamt)
+        {
+            textBoxeintrag.Text = listView1.Items.Count.ToString();
+
+            double aaaaa = 0;
+            foreach (ListViewItem lstItem in listView1.Items)
+            {
+                string a = lstItem.SubItems[4].Text.Replace('€', ' ');
+                double a1 = double.Parse(a);
+                aaaaa = aaaaa + a1;
+            }
+            textBoxgesamt.Text = aaaaa.ToString() + "€";
+        }
+
         private void button1fertig_Click(object sender, EventArgs e)
         {
             string[] A = { textBoxDate.Text, data.products[comboBox1.SelectedIndex], textBox1price.Text, anzahl.Value.ToString(), textBox1einnahmen.Text };
@@ -40,6 +62,7 @@ namespace schuelerfirma_proj
             listView1.Items.Clear();
             xml_listview.write(listView1, data.xmlpath);
             listView1.Items[listView1.Items.Count - 1].EnsureVisible();
+            Refr(textBoxeintrag, textBoxgesamt);
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -50,6 +73,7 @@ namespace schuelerfirma_proj
         {
             comboBox1.SelectAll();
             textBox1price.Text = data.prices[comboBox1.SelectedIndex].ToString() + "€";
+            Refr(textBoxeintrag, textBoxgesamt); //just in case
         }
         private void anzahl_ValueChanged(object sender, EventArgs e)
         {
@@ -73,7 +97,11 @@ namespace schuelerfirma_proj
 
         private void resizeend(object sender, EventArgs e)
         {
-            this.Size = new Size(534, 602);
+            this.Size = new Size(534, 635);
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

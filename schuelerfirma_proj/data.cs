@@ -4,6 +4,7 @@ using System.Xml.Linq;
 using System;
 using System.Text.RegularExpressions;
 using System.Net;
+using System.Windows.Forms;
 
 namespace schuelerfirma_proj
 {
@@ -51,6 +52,7 @@ namespace schuelerfirma_proj
         public static void download_pricelist()
         {
             if (!File.Exists(pricelist_name)) { File.WriteAllText(pricelist_name, "<Configuration>< Produkte ></ Produkte ></ Configuration > "); }
+
             WebClient client = new WebClient();
             Stream stream = client.OpenRead(pricelistlocation);
             StreamReader reader = new StreamReader(stream);
